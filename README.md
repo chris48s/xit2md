@@ -17,7 +17,7 @@ pip install xit2md
 
 ## Usage
 
-```python-repl
+```pycon
 >>> from xit2md import xit2md_text
 
 >>> xit = """Named Group

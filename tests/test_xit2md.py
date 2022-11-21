@@ -49,7 +49,7 @@ def test_all():
     assert xit2md_text(input_) == expected
 
 
-def test_heading_weight():
-    assert "\nNamed Group\n" in xit2md_text(input_, heading_weight=0)
-    assert "\n### Named Group\n" in xit2md_text(input_, heading_weight=3)
-    assert "\n###### Named Group\n" in xit2md_text(input_, heading_weight=42)
+def test_heading_level():
+    assert "\nNamed Group\n" in xit2md_text(input_, heading_level=0)
+    assert "\n### Named Group\n" in xit2md_text(input_, heading_level=3)
+    assert "\n###### Named Group\n" in xit2md_text(input_, heading_level=42)

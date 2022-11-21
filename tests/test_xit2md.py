@@ -7,6 +7,10 @@ input_ = """[ ] Open
 
 Named Group
 [ ] This #item #has=tags
+[ ] This is a longer
+    description text
+    split over
+    multiple lines
 [ ] Do this soon -> 2022-01-31
 [ ] !! This is important
 [ ] ! All #the=things -> 2022-12
@@ -23,6 +27,10 @@ expected = """[//]: # (unnamed group)
 
 # Named Group
 - [ ] This #item #has=tags
+- [ ] This is a longer
+      description text
+      split over
+      multiple lines
 - [ ] Do this soon -> 2022-01-31
 - [ ] !! This is important
 - [ ] ! All #the=things -> 2022-12

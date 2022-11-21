@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "xit2md"
+version = "0.0.1"
+description = "Convert [x]it! to markdown"
+authors = ["chris48s"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/chris48s/xit2md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+isort = "^5.10"
+flake8 = "^5.0.4"
+black = "==22.10.0"
+pytest = "^7.2.0"
+pytest-cov = "^4.0.0"
+
+[build-system]
+requires = ["poetry>=1.0.2"]
+build-backend = "poetry.core.masonry.api"

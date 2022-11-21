@@ -7,7 +7,7 @@
 ![Python Compatibility](https://img.shields.io/badge/dynamic/json?query=info.requires_python&label=python&url=https%3A%2F%2Fpypi.org%2Fpypi%2Fxit2md%2Fjson)
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
 
-Convert [x]it! to markdown
+[[x]it!](https://xit.jotaen.net/) is a plain-text file format for todos and check lists. xit2md converts a checklist in [x]it! format to markdown task lists. Markdown task lists are available in many markdown dialects including GitHub Flavored Markdown.
 
 ## Installation
 
@@ -17,4 +17,20 @@ pip install xit2md
 
 ## Usage
 
-<!-- TODO -->
+```python-repl
+>>> from xit2md import xit2md_text
+
+>>> xit = """Named Group
+... [ ] Open
+... [x] Checked
+... [@] Ongoing
+... [~] Obsolete
+... """
+
+>>> print(xit2md_text(xit, heading_level=2))
+## Named Group
+- [ ] Open
+- [x] Checked
+- [ ] Ongoing
+- [x] ~Obsolete~
+```

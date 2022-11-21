@@ -2,9 +2,12 @@ from stage_left import parse_text
 from stage_left.types import State
 
 
-def _get_description(description):
-    lines = description.split("\n")
-    return "\n".join([lines[0]] + [f"      {line}" for line in lines[1:]])
+def _get_description(item):
+    lines = item.description.split("\n")
+    description = "\n".join([lines[0]] + [f"      {line}" for line in lines[1:]])
+    if item.priority > 0:
+        description = f"**{description}**"
+    return description
 
 
 def _get_heading(title, heading_weight):
@@ -26,10 +29,10 @@ def xit2md_text(text, heading_weight=1):
             out.append("[//]: # (unnamed group)")
         for item in group.items:
             if item.state in [State.OPEN, State.ONGOING]:
-                out.append("- [ ] " + _get_description(item.description))
+                out.append("- [ ] " + _get_description(item))
             if item.state == State.CHECKED:
-                out.append("- [x] " + _get_description(item.description))
+                out.append("- [x] " + _get_description(item))
             if item.state == State.OBSOLETE:
-                out.append("- [x] ~" + _get_description(item.description) + "~")
+                out.append("- [x] ~" + _get_description(item) + "~")
         out.append("")
     return "\n".join(out)

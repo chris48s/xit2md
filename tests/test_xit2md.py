@@ -14,6 +14,8 @@ Named Group
 [ ] Do this soon -> 2022-01-31
 [ ] !! This is important
 [ ] ! All #the=things -> 2022-12
+[~] ! Obsolete, important,
+    multi-line
 
 [ ] Item 1
 [ ] Item 2
@@ -32,8 +34,10 @@ expected = """[//]: # (unnamed group)
       split over
       multiple lines
 - [ ] Do this soon -> 2022-01-31
-- [ ] !! This is important
-- [ ] ! All #the=things -> 2022-12
+- [ ] **!! This is important**
+- [ ] **! All #the=things -> 2022-12**
+- [x] ~**! Obsolete, important,
+      multi-line**~
 
 [//]: # (unnamed group)
 - [ ] Item 1

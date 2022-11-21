@@ -258,6 +258,14 @@ pytest = ">=4.6"
 testing = ["fields", "hunter", "process-tests", "pytest-xdist", "six", "virtualenv"]
 
 [[package]]
+name = "stage-left"
+version = "0.1.1"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.7,<4.0"
+
+[[package]]
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
@@ -296,7 +304,7 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "d6a4ae3287324501d9743b7c50b8e819c33fbd9f92d5c5e102dbed8e83d4032a"
+content-hash = "617731ce25f22efd99aef5d584ab70dede7c6b5a31e21f4048db620b2d90a934"
 
 [metadata.files]
 attrs = [
@@ -449,6 +457,10 @@ pytest = [
 pytest-cov = [
     {file = "pytest-cov-4.0.0.tar.gz", hash = "sha256:996b79efde6433cdbd0088872dbc5fb3ed7fe1578b68cdbba634f14bb8dd0470"},
     {file = "pytest_cov-4.0.0-py3-none-any.whl", hash = "sha256:2feb1b751d66a8bd934e5edfa2e961d11309dc37b73b0eabe73b5945fee20f6b"},
+]
+stage-left = [
+    {file = "stage-left-0.1.1.tar.gz", hash = "sha256:e963bb244335a92c8bc8c34d5ca17921951b238ea840fca4bc0429af83b3b183"},
+    {file = "stage_left-0.1.1-py3-none-any.whl", hash = "sha256:2dd37c4a990f45c61fca0fbd566e037e858df4a24e63956f228d468c488e4c33"},
 ]
 tomli = [
     {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},

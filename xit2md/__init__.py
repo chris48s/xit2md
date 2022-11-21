@@ -7,12 +7,21 @@ def _get_description(description):
     return "\n".join([lines[0]] + [f"      {line}" for line in lines[1:]])
 
 
-def xit2md_text(text):
+def _get_heading(title, heading_weight):
+    if heading_weight == 0:
+        return title
+    return f"{'#'*heading_weight} " + title
+
+
+def xit2md_text(text, heading_weight=1):
     out = []
     parsed = parse_text(text)
     for group in parsed:
         if group.title:
-            out.append("# " + group.title)
+            if heading_weight > 6:
+                out.append(_get_heading(group.title, 6))
+            else:
+                out.append(_get_heading(group.title, heading_weight))
         else:
             out.append("[//]: # (unnamed group)")
         for item in group.items:

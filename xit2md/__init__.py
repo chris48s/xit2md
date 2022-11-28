@@ -28,7 +28,7 @@ def xit2md_text(text, heading_level=1):
             Default: ``1``
 
     Returns:
-        str
+        str: String containing markdown task lists
     """
     out = []
     parsed = parse_text(text)

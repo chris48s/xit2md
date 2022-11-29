@@ -236,11 +236,11 @@ testing = ["fields", "hunter", "process-tests", "pytest-xdist", "six", "virtuale
 
 [[package]]
 name = "stage-left"
-version = "0.1.1"
-description = ""
+version = "0.2.0"
+description = "Parse [x]it! documents into python data structures"
 category = "main"
 optional = false
-python-versions = ">=3.7,<4.0"
+python-versions = ">=3.8,<4.0"
 
 [[package]]
 name = "tomli"
@@ -261,7 +261,7 @@ python-versions = ">=3.7"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "3efc2180f328ee1941baf4dde6aa435bfb8047b85517d1e70720598b7ae2f1b5"
+content-hash = "c3e5d9452fa758c15215f569c43d25ce9e4b84c90016a2a9950450eda90a632e"
 
 [metadata.files]
 attrs = [
@@ -412,8 +412,8 @@ pytest-cov = [
     {file = "pytest_cov-4.0.0-py3-none-any.whl", hash = "sha256:2feb1b751d66a8bd934e5edfa2e961d11309dc37b73b0eabe73b5945fee20f6b"},
 ]
 stage-left = [
-    {file = "stage-left-0.1.1.tar.gz", hash = "sha256:e963bb244335a92c8bc8c34d5ca17921951b238ea840fca4bc0429af83b3b183"},
-    {file = "stage_left-0.1.1-py3-none-any.whl", hash = "sha256:2dd37c4a990f45c61fca0fbd566e037e858df4a24e63956f228d468c488e4c33"},
+    {file = "stage_left-0.2.0-py3-none-any.whl", hash = "sha256:4276a626a28929a6d33d60eead0ffa90202d984a6c176117ad1d0c48111b829a"},
+    {file = "stage_left-0.2.0.tar.gz", hash = "sha256:3710ac91b6ac182b7ab8587cbd1dd040ac1673ca0dda29ba8c4448de076084fc"},
 ]
 tomli = [
     {file = "tomli-2.0.1-py3-none-any.whl", hash = "sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc"},

@@ -1,3 +1,7 @@
+import argparse
+import sys
+from functools import partial
+
 from stage_left import parse_text
 from stage_left.types import State
 
@@ -51,3 +55,43 @@ def xit2md_text(text, heading_level=1):
                 out.append("- [x] ~" + _get_description(item) + "~")
         out.append("")
     return "\n".join(out)
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="Convert a checklist in [x]it! format to markdown task lists",
+    )
+    parser.add_argument(
+        "file",
+        nargs="?",
+        help="Input file, if empty stdin is used",
+        type=argparse.FileType("r"),
+        default=sys.stdin,
+    )
+
+    def check_int_range(min_, max_, value):
+        ivalue = int(value)
+        if ivalue < min_ or ivalue > max_:
+            raise argparse.ArgumentTypeError(f"must be in the range {min_}-{max_}")
+        return ivalue
+
+    parser.add_argument(
+        "--heading-level",
+        type=partial(check_int_range, 0, 6),
+        required=False,
+        default=1,
+        help="A number 0 to 6. Group titles will be represented using this heading level (default: 1)",
+    )
+
+    args = parser.parse_args()
+
+    if args.file.isatty():
+        parser.print_help()
+        return 0
+
+    sys.stdout.write(xit2md_text(args.file.read(), heading_level=args.heading_level))
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

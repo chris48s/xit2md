@@ -17,6 +17,18 @@ pip install xit2md
 
 ## Usage
 
+### On the Console
+
+```sh
+# convert [x]it! file to markdown file
+$ xit2md in.xit > out.md
+
+# fetch [x]it! file from the web and convert to markdown
+$ curl "https://myserver.com/example.xit" | xit2md
+```
+
+### As a Library
+
 ```pycon
 >>> from xit2md import xit2md_text
 

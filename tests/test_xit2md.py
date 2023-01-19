@@ -8,6 +8,7 @@ input_ = """[ ] Open
 [x] Checked
 [@] Ongoing
 [~] Obsolete
+[?] In Question
 
 Named Group
 [ ] This #item #has=tags
@@ -30,6 +31,7 @@ expected = """[//]: # (unnamed group)
 - [x] Checked
 - [ ] Ongoing
 - [x] ~Obsolete~
+- [ ] In Question
 
 # Named Group
 - [ ] This #item #has=tags

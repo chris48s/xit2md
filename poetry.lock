@@ -376,14 +376,14 @@ testing = ["fields", "hunter", "process-tests", "pytest-xdist", "six", "virtuale
 
 [[package]]
 name = "stage-left"
-version = "0.2.0"
+version = "0.2.1"
 description = "Parse [x]it! documents into python data structures"
 category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "stage_left-0.2.0-py3-none-any.whl", hash = "sha256:4276a626a28929a6d33d60eead0ffa90202d984a6c176117ad1d0c48111b829a"},
-    {file = "stage_left-0.2.0.tar.gz", hash = "sha256:3710ac91b6ac182b7ab8587cbd1dd040ac1673ca0dda29ba8c4448de076084fc"},
+    {file = "stage_left-0.2.1-py3-none-any.whl", hash = "sha256:a3d4bbb2d27163f493c10cbd6612b8946cdcf548e3f11df575af45f7bf922b8b"},
+    {file = "stage_left-0.2.1.tar.gz", hash = "sha256:86191d512d8901886d1343b4247f4a020d89d7d1af9fd1e238e1ff66fe18a7d2"},
 ]
 
 [[package]]

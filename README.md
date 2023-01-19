@@ -37,6 +37,7 @@ $ curl "https://myserver.com/example.xit" | xit2md
 ... [x] Checked
 ... [@] Ongoing
 ... [~] Obsolete
+... [?] In Question
 ... """
 
 >>> print(xit2md_text(xit, heading_level=2))
@@ -45,4 +46,5 @@ $ curl "https://myserver.com/example.xit" | xit2md
 - [x] Checked
 - [ ] Ongoing
 - [x] ~Obsolete~
+- [ ] In Question
 ```

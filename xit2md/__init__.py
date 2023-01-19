@@ -47,12 +47,12 @@ def xit2md_text(text, heading_level=1):
             out.append("[//]: # (unnamed group)")
 
         for item in group.items:
-            if item.state in [State.OPEN, State.ONGOING]:
-                out.append("- [ ] " + _get_description(item))
             if item.state == State.CHECKED:
                 out.append("- [x] " + _get_description(item))
-            if item.state == State.OBSOLETE:
+            elif item.state == State.OBSOLETE:
                 out.append("- [x] ~" + _get_description(item) + "~")
+            else:
+                out.append("- [ ] " + _get_description(item))
         out.append("")
     return "\n".join(out)
 

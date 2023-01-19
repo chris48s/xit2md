@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "xit2md"
-version = "0.2.0"
+version = "0.2.1"
 description = "Convert [x]it! to markdown"
 authors = ["chris48s"]
 license = "MIT"

@@ -16,7 +16,7 @@ isort = "^5.12"
 flake8 = "^5.0.4"
 black = "==23.3.0"
 pytest = "^7.3.1"
-pytest-cov = "^4.0.0"
+pytest-cov = "^4.1.0"
 
 [build-system]
 requires = ["poetry>=1.0.2"]

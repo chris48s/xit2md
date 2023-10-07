@@ -17,7 +17,7 @@ def _get_description(item):
 def _get_heading(title, heading_level):
     if heading_level == 0:
         return title
-    return f"{'#'*heading_level} " + title
+    return f"{'#' * heading_level} " + title
 
 
 def xit2md_text(text, heading_level=1):

@@ -350,14 +350,14 @@ testing = ["fields", "hunter", "process-tests", "pytest-xdist", "six", "virtuale
 
 [[package]]
 name = "stage-left"
-version = "0.2.1"
+version = "0.2.2"
 description = "Parse [x]it! documents into python data structures"
 category = "main"
 optional = false
-python-versions = ">=3.8,<4.0"
+python-versions = ">=3.8"
 files = [
-    {file = "stage_left-0.2.1-py3-none-any.whl", hash = "sha256:a3d4bbb2d27163f493c10cbd6612b8946cdcf548e3f11df575af45f7bf922b8b"},
-    {file = "stage_left-0.2.1.tar.gz", hash = "sha256:86191d512d8901886d1343b4247f4a020d89d7d1af9fd1e238e1ff66fe18a7d2"},
+    {file = "stage_left-0.2.2-py3-none-any.whl", hash = "sha256:ac69c6ee6bf51162b0d9aba46a51d3be3177fa731a5308f4262edff23bcb647f"},
+    {file = "stage_left-0.2.2.tar.gz", hash = "sha256:8558101699570cfd23173831829b40ab37c217d9d97183c0c90bd58cab8fbbf2"},
 ]
 
 [[package]]
@@ -386,5 +386,5 @@ files = [
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.8"
-content-hash = "967a8b574a7a6681c0fb84a6446c71c20a2c6e798e57dcfc7b8fdf4abc3bbef8"
+python-versions = ">=3.8"
+content-hash = "17d797f31d9961687027712dbfb24748db4b3f64be5910ff5768b475ac14892f"

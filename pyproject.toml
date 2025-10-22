@@ -1,6 +1,6 @@
 [project]
 name = "xit2md"
-version = "0.2.2"
+version = "0.3.0"
 description = "Convert [x]it! to markdown"
 authors = [{name = "chris48s"}]
 license = "MIT"

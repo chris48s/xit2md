@@ -16,7 +16,7 @@ Source = "https://github.com/chris48s/xit2md"
 
 [tool.poetry.group.dev.dependencies]
 isort = "5.13.2"
-flake8 = "7.1.2"
+flake8 = "7.3.0"
 black = "24.8.0"
 pytest = "8.3.5"
 pytest-cov = "5.0.0"

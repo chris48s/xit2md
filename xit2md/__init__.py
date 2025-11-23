@@ -5,6 +5,8 @@ from functools import partial
 from stage_left import parse_text
 from stage_left.types import State
 
+from .__version__ import __version__
+
 
 def _get_description(item):
     lines = item.description.split("\n")
@@ -81,6 +83,10 @@ def main():
         required=False,
         default=1,
         help="A number 0 to 6. Group titles will be represented using this heading level (default: 1)",
+    )
+
+    parser.add_argument(
+        "--version", action="version", version=f"%(prog)s {__version__}"
     )
 
     args = parser.parse_args()

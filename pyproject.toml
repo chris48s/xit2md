@@ -15,7 +15,7 @@ Home = "https://github.com/chris48s/xit2md"
 Source = "https://github.com/chris48s/xit2md"
 
 [tool.poetry.group.dev.dependencies]
-isort = "7.0.0"
+isort = "8.0.0"
 flake8 = "7.3.0"
 black = "26.1.0"
 pytest = "9.0.2"
